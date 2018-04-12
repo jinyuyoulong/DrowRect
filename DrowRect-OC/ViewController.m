@@ -25,7 +25,9 @@
                         [UIColor blueColor]
                         ];
     CGRect frame = CGRectMake(0, 0, 200, 200);
+    
     _pie = [[PieView alloc] initWithFrame:frame dataItems:@[@4,@1,@5] colorItems:colors];
+    _pie.center = self.view.center;
     [self.view addSubview:_pie];
 
 }
