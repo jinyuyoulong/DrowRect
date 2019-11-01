@@ -28,6 +28,7 @@
 		3897DB9F1DA89A6800C865C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3897DB9E1DA89A6800C865C6 /* Assets.xcassets */; };
 		3897DBA21DA89A6800C865C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3897DBA01DA89A6800C865C6 /* LaunchScreen.storyboard */; };
 		3897DBAB1DA89AA700C865C6 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3897DBAA1DA89AA700C865C6 /* PieView.m */; };
+		502848B6236C0F3C00EB5E5B /* NSString+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 502848B5236C0F3C00EB5E5B /* NSString+Handler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		3897DBA31DA89A6800C865C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3897DBA91DA89AA700C865C6 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
 		3897DBAA1DA89AA700C865C6 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
+		502848B4236C0F3C00EB5E5B /* NSString+Handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Handler.h"; sourceTree = "<group>"; };
+		502848B5236C0F3C00EB5E5B /* NSString+Handler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Handler.m"; sourceTree = "<group>"; };
 		50B187C520749A3400109ABE /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
 		50B187C620749A3400109ABE /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
 		50B187C920749A3400109ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				3897DB991DA89A6800C865C6 /* ViewController.m */,
 				3897DBA91DA89AA700C865C6 /* PieView.h */,
 				3897DBAA1DA89AA700C865C6 /* PieView.m */,
+				502848B4236C0F3C00EB5E5B /* NSString+Handler.h */,
+				502848B5236C0F3C00EB5E5B /* NSString+Handler.m */,
 				3897DB9B1DA89A6800C865C6 /* Main.storyboard */,
 				3897DB9E1DA89A6800C865C6 /* Assets.xcassets */,
 				3897DBA01DA89A6800C865C6 /* LaunchScreen.storyboard */,
@@ -154,12 +159,13 @@
 		3897DB871DA89A6800C865C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Fans;
 				TargetAttributes = {
 					3897DB8E1DA89A6800C865C6 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 9DDSADME62;
+						ProvisioningStyle = Automatic;
 					};
 					50B187D42074A4D600109ABE = {
 						CreatedOnToolsVersion = 9.2;
@@ -169,7 +175,7 @@
 			};
 			buildConfigurationList = 3897DB8A1DA89A6800C865C6 /* Build configuration list for PBXProject "DrowRect-OC" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -220,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502848B6236C0F3C00EB5E5B /* NSString+Handler.m in Sources */,
 				3897DB9A1DA89A6800C865C6 /* ViewController.m in Sources */,
 				3897DBAB1DA89AA700C865C6 /* PieView.m in Sources */,
 				3897DB971DA89A6800C865C6 /* AppDelegate.m in Sources */,
@@ -261,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -270,6 +278,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -277,6 +286,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -316,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -325,6 +336,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -332,6 +344,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -366,9 +379,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DDSADME62;
 				INFOPLIST_FILE = "DrowRect-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fans.DrowRect-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,9 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DDSADME62;
 				INFOPLIST_FILE = "DrowRect-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fans.DrowRect-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

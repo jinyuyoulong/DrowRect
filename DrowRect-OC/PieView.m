@@ -7,6 +7,9 @@
 //
 
 #import "PieView.h"
+#import "NSString+Handler.h"
+
+#define SCREENT_WIDTH [[UIScreen mainScreen] bounds].size.width
 
 #define kAnimationDuration 2.0f
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
@@ -390,16 +393,16 @@ typedef enum : NSUInteger {
 - (void)makeLabelTextAlignment:(UILabel*)lab1 lab2:(UILabel*)lab2 textAli:(NSTextAlignment)textAli{
     lab1.textAlignment = textAli;
     lab2.textAlignment = textAli;
-    lab1.font = [UIFont lightASCIIFontOfSize:12];
-    lab2.font = [UIFont lightChineseFontOfSize:12];
-    lab1.textColor = [UIColor color000000];
-    lab2.textColor = [UIColor color666666];
+    lab1.font = [UIFont systemFontOfSize:12];
+    lab2.font = [UIFont systemFontOfSize:12];
+    lab1.textColor = [UIColor blackColor];
+    lab2.textColor = [UIColor colorWithRed:102 green:102 blue:102 alpha:1];
 }
 - (void)makeHalfCircleView:(CGPoint)center redius:(CGFloat)redius{
     UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:center radius:redius startAngle:-M_PI_2 endAngle:M_PI_2*3 clockwise:YES];
     CAShapeLayer * layer = [CAShapeLayer layer];
     layer.path = path.CGPath;
-    layer.strokeColor = UIColorFromRGB(0xc6c6c6).CGColor;
+    layer.strokeColor = [UIColor colorWithRed:198 green:198 blue:198 alpha:1].CGColor;
     layer.fillColor = [UIColor whiteColor].CGColor;
     layer.lineWidth = redius * 2;
     layer.strokeStart = 0;
