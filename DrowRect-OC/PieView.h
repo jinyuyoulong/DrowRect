@@ -28,7 +28,7 @@
 @property (nonatomic, strong) NSArray *titles; //!< 尾行注释 文本。appledoc不可用
 
 /**
- 初始化 数据和颜色值
+ 只有饼图和比例
 
  @param frame      frame
  @param dataItems  数据集
@@ -41,7 +41,7 @@
 - (void)stroke;
 
 /**
- init with item title
+ 有文字描述
 
  @param dataItems 数据集
  @param titles 说明title

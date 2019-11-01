@@ -25,18 +25,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    NSArray *colors = @[
-//                        [UIColor redColor],
-//                        [UIColor yellowColor],
-//                        [UIColor blueColor]
-//                        ];
-//    CGRect frame = CGRectMake(0, 0, 200, 200);
-//
-//    _pie = [[PieView alloc] initWithFrame:frame dataItems:@[@4,@1,@5] colorItems:colors];
-//
-//    _pie.center = self.view.center;
-//    [self.view addSubview:_pie];
+    //    第一个动画
+    NSArray *colors = @[
+                        [UIColor redColor],
+                        [UIColor yellowColor],
+                        [UIColor blueColor]
+                        ];
+    CGRect frame = CGRectMake(0, 0, 200, 200);
+
+    _pie = [[PieView alloc] initWithFrame:frame dataItems:@[@4,@1,@5] colorItems:colors];
+    _pie.center = self.view.center;
+    [self.view addSubview:_pie];
     
+    
+    //    第二个动画
     self.bgView = [[UIView alloc] init];
     self.bgView.frame = CGRectMake(0, 50, SCREENT_WIDTH, 400);
     self.bgView.backgroundColor = [UIColor whiteColor];
@@ -72,7 +74,7 @@
     if ([[balance trimSemicolon] floatValue] != 0) {
         [_datas addObject:balance];
         [titles addObject:@"房租"];
-        [colors addObject:[UIColor lightGrayColor]];
+        [colors addObject:[UIColor colorWithHexString:@"#666666"]];
     }
     [self makeCircleView:_datas colors:colors titles:titles];
     self.labTotal.text = total;
@@ -97,11 +99,11 @@
     [self.bgView addSubview:circleView];
     
     
-    UIView *ttItem = [self makeBottomItem:@"tt_icon" text:@"天天趣"];
+    UIView *ttItem = [self makeBottomItem:@"tt_icon" text:@"交通"];
     [self.bgView addSubview:ttItem];
-    UIView *yyItem = [self makeBottomItem:@"yy_icon" text:@"月月趣"];
+    UIView *yyItem = [self makeBottomItem:@"yy_icon" text:@"日常"];
     [self.bgView addSubview:yyItem];
-    UIView *balanceItem = [self makeBottomItem:@"balance_icon" text:@"可用余额"];
+    UIView *balanceItem = [self makeBottomItem:@"balance_icon" text:@"房租"];
     [self.bgView addSubview:balanceItem];
     
     totalTitle.frame = CGRectMake(0, 10, 100, 50);

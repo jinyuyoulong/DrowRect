@@ -351,42 +351,42 @@ typedef enum : NSUInteger {
     UILabel * lab2 = [[UILabel alloc] init];
     lab2.text = title;
     [self addSubview:lab2];
-    CGRect frame1;
-    CGRect frame2;
+    CGRect numfram;
+    CGRect labFram;
     float labWidth = 100;
     float labHeight = 20;
     
     switch (type) {
         case AngleTypeRightUp:
-            frame1 = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y - 20, labWidth, labHeight);
-            frame2 = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y, labWidth, labHeight);
+            numfram = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y - 20, labWidth, labHeight);
+            labFram = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y, labWidth, labHeight);
             [self makeLabelTextAlignment:numberlab1 lab2:lab2 textAli:NSTextAlignmentRight];
             break;
         case AngleTypeRightDown:
-            frame2 = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y - 20, labWidth, labHeight);
-            frame1 = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y, labWidth, labHeight);
+            labFram = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y - 20, labWidth, labHeight);
+            numfram = CGRectMake(SCREENT_WIDTH-labWidth-15, startP.y, labWidth, labHeight);
             [self makeLabelTextAlignment:numberlab1 lab2:lab2 textAli:NSTextAlignmentRight];
             break;
         case AngleTypeLeftDown:
-            frame2 = CGRectMake(15, startP.y-20, labWidth, labHeight);
-            frame1 = CGRectMake(15, startP.y, labWidth, labHeight);
+            labFram = CGRectMake(15, startP.y-20, labWidth, labHeight);
+            numfram = CGRectMake(15, startP.y, labWidth, labHeight);
             [self makeLabelTextAlignment:numberlab1 lab2:lab2 textAli:NSTextAlignmentLeft];
             
             break;
         case AngleTypeLeftUp:
-            frame1 = CGRectMake(15, startP.y - 20, labWidth, labHeight);
-            frame2 = CGRectMake(15, startP.y, labWidth, labHeight);
+            numfram = CGRectMake(15, startP.y - 20, labWidth, labHeight);
+            labFram = CGRectMake(15, startP.y, labWidth, labHeight);
             [self makeLabelTextAlignment:numberlab1 lab2:lab2 textAli:NSTextAlignmentLeft];
             break;
         default:
-            frame1 = CGRectMake(15, startP.y - 20, labWidth, labHeight);
-            frame2 = CGRectMake(15, startP.y, labWidth, labHeight);
+            numfram = CGRectMake(15, startP.y - 20, labWidth, labHeight);
+            labFram = CGRectMake(15, startP.y, labWidth, labHeight);
             [self makeLabelTextAlignment:numberlab1 lab2:lab2 textAli:NSTextAlignmentLeft];
             break;
     }
     
-    numberlab1.frame = frame1;
-    lab2.frame = frame2;
+    numberlab1.frame = numfram;
+    lab2.frame = labFram;
     
 }
 - (void)makeLabelTextAlignment:(UILabel*)lab1 lab2:(UILabel*)lab2 textAli:(NSTextAlignment)textAli{
@@ -395,7 +395,7 @@ typedef enum : NSUInteger {
     lab1.font = [UIFont systemFontOfSize:12];
     lab2.font = [UIFont systemFontOfSize:12];
     lab1.textColor = [UIColor blackColor];
-    lab2.textColor = [UIColor colorWithRed:102 green:102 blue:102 alpha:1];
+    lab2.textColor = [UIColor purpleColor];
 }
 - (void)makeHalfCircleView:(CGPoint)center redius:(CGFloat)redius{
     UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:center radius:redius startAngle:-M_PI_2 endAngle:M_PI_2*3 clockwise:YES];
