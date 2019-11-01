@@ -49,5 +49,4 @@
  @return self
  */
 - (id)initWithDataItems:(NSArray*)dataItems titles:(NSArray*)titles colorItems:(NSArray*)colorItems;
-
 @end

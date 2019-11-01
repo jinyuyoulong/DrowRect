@@ -29,6 +29,7 @@
 		3897DBA21DA89A6800C865C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3897DBA01DA89A6800C865C6 /* LaunchScreen.storyboard */; };
 		3897DBAB1DA89AA700C865C6 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3897DBAA1DA89AA700C865C6 /* PieView.m */; };
 		502848B6236C0F3C00EB5E5B /* NSString+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 502848B5236C0F3C00EB5E5B /* NSString+Handler.m */; };
+		502848BC236C15C000EB5E5B /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 502848BB236C15C000EB5E5B /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,8 @@
 		3897DBAA1DA89AA700C865C6 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
 		502848B4236C0F3C00EB5E5B /* NSString+Handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Handler.h"; sourceTree = "<group>"; };
 		502848B5236C0F3C00EB5E5B /* NSString+Handler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Handler.m"; sourceTree = "<group>"; };
+		502848BA236C15C000EB5E5B /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		502848BB236C15C000EB5E5B /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		50B187C520749A3400109ABE /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
 		50B187C620749A3400109ABE /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
 		50B187C920749A3400109ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				3897DBAA1DA89AA700C865C6 /* PieView.m */,
 				502848B4236C0F3C00EB5E5B /* NSString+Handler.h */,
 				502848B5236C0F3C00EB5E5B /* NSString+Handler.m */,
+				502848BA236C15C000EB5E5B /* UIColor+Hex.h */,
+				502848BB236C15C000EB5E5B /* UIColor+Hex.m */,
 				3897DB9B1DA89A6800C865C6 /* Main.storyboard */,
 				3897DB9E1DA89A6800C865C6 /* Assets.xcassets */,
 				3897DBA01DA89A6800C865C6 /* LaunchScreen.storyboard */,
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				502848B6236C0F3C00EB5E5B /* NSString+Handler.m in Sources */,
+				502848BC236C15C000EB5E5B /* UIColor+Hex.m in Sources */,
 				3897DB9A1DA89A6800C865C6 /* ViewController.m in Sources */,
 				3897DBAB1DA89AA700C865C6 /* PieView.m in Sources */,
 				3897DB971DA89A6800C865C6 /* AppDelegate.m in Sources */,

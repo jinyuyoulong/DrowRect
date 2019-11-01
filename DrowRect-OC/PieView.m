@@ -30,7 +30,6 @@ typedef enum : NSUInteger {
 @property (nonatomic) CGFloat total;
 @property (nonatomic) CAShapeLayer *bgCircleLayer;
 @property (nonatomic, strong) UIView *bgView;
-
 @end
 
 
